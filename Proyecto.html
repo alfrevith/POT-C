@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POT-C</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="Images/Icono.png" type="image/x-icon">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+        <section class="relative text-white py-24 px-6 text-center bg-cover bg-center h-[600px]"
+        style="background-image: url('Images/Prueba.jpg');">
+
+        <nav
+            class="absolute top-4 left-1/2 transform -translate-x-1/2 flex justify-center gap-6 bg-black/30 backdrop-blur-[2px] py-1 px-6 rounded-b-2xl shadow-xl">
+            <a href="Home.html" class="text-white font-semibold hover:text-[#7A9B30] transition px-4 py-2">Inicio</a>
+            <a href="Recomendaciones.html"
+                class="text-white font-semibold hover:text-[#7A9B30] transition px-4 py-2">Recomendaciones</a>
+            <a href="Proyecto.html"
+                class="text-white font-semibold hover:text-[#7A9B30] transition px-4 py-2">Proyecto</a>
+        </nav>
+
+        <img src="Images/Logo Blanco.png"
+            class="my-7 drop-shadow-[0_0_8px_rgba(255,255,255,0.8)] w-[200px] h-[200px] mx-auto mb-">
+
+        <div class="bg-black/30 p-1 rounded-xl max-w-2xl mx-auto mb-10">
+            <p class="text-xl">
+                A continuación mostraremos a mayor detalle el funcionamiento de nuestro basurero automatico.
+            </p>
+        </div>
+
+        <a href="#informacion"
+            class="px-8 py-3 rounded-full font-semibold text-[#353A13] bg-[#F8DCC6] shadow-md
+          hover:bg-[#353A13] hover:text-white hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.7)]">
+            ¿Como funciona?
+        </a>
+    </section>
+
+      <section class="w-full max-w-4xl p-6 bg-white shadow-lg rounded-2xl">
+    <h2 class="text-2xl font-bold text-center mb-4">Mi Proyecto 3D</h2>
+    <p class="text-center text-gray-600 mb-6">
+      Explora el modelo 3D de mi proyecto, gíralo y haz zoom para verlo en detalle.
+    </p>
+
+      <div class="w-full h-[500px] border rounded-2xl shadow-lg overflow-hidden">
+        <model-viewer src="/veniladorre.glb"
+                      alt="Modelo 3D de mi proyecto"
+                      auto-rotate
+                      camera-controls
+                      shadow-intensity="1"
+                      class="w-full h-full">
+        </model-viewer>
+      </div>
+      <script>document.addEventListener("scroll", () => {
+  const viewer = document.querySelector("model-viewer");
+  const scrollTop = window.scrollY;
+  const maxScroll = document.body.scrollHeight - window.innerHeight;
+  const progress = scrollTop / maxScroll;
+  viewer.currentTime = progress * viewer.duration; // avanza animación según scroll
+});</script>
+  </section>
+
+    <section id="como-funciona" class="bg-green-50 py-20 px-6">
+        <h2 class="text-4xl font-bold text-center mb-12">Cómo Funciona</h2>
+        <div class="max-w-4xl mx-auto grid md:grid-cols-3 gap-10 text-center">
+            <div>
+                <div
+                    class="w-20 h-20 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                    1</div>
+                <h3 class="text-2xl font-semibold mb-2">Deposita tus desechos</h3>
+                <p>Coloca restos orgánicos como cáscaras de frutas o verduras en el basurero POT-C.</p>
+            </div>
+            <div>
+                <div
+                    class="w-20 h-20 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                    2</div>
+                <h3 class="text-2xl font-semibold mb-2">Proceso Inteligente</h3>
+                <p>El sistema mezcla, humedece y controla la temperatura para acelerar la descomposición de manera
+                    natural.</p>
+            </div>
+            <div>
+                <div
+                    class="w-20 h-20 bg-green-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
+                    3</div>
+                <h3 class="text-2xl font-semibold mb-2">Obtén composta</h3>
+                <p>Después de unos días, tendrás composta natural lista para fertilizar tus plantas o jardín.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
