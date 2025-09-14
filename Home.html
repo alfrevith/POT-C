@@ -7,15 +7,18 @@
     <title>POT-C</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="Images/Icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="Efectos.css">
+    <script src="Codigos.js"></script>
 </head>
 
 <body>
     <section class="relative text-white py-24 px-6 text-center bg-cover bg-center h-[600px]"
-        style="background-image: url('Probando1.jpg');">
+        style="background-image: url('Images/Background1.png');">
 
         <nav
             class="absolute top-4 left-1/2 transform -translate-x-1/2 flex justify-center gap-6 bg-black/30 backdrop-blur-[2px] py-1 px-6 rounded-b-2xl shadow-xl">
-            <a href="Home.html" class="text-white font-semibold hover:text-[#7A9B30] transition px-4 py-2"><u>Inicio</u></a>
+            <a href="Home.html"
+                class="text-white font-semibold hover:text-[#7A9B30] transition px-4 py-2"><u>Inicio</u></a>
             <a href="Proyecto.html"
                 class="text-white font-semibold hover:text-[#7A9B30] transition px-4 py-2">Proyecto</a>
             <a href="Consejos.html"
@@ -31,8 +34,7 @@
             </p>
         </div>
 
-        <a href="#informacion"
-            class="px-8 py-3 rounded-full font-semibold text-[#353A13] bg-[#F8DCC6] shadow-md
+        <a href="#informacion" class="px-8 py-3 rounded-full font-semibold text-[#353A13] bg-[#F8DCC6] shadow-md
           hover:bg-[#353A13] hover:text-white hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.7)]">
             Process of the Change
         </a>
@@ -53,7 +55,7 @@
 
         <div class="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
             <div
-                class="bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden">
+                class="wave-glow bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden">
                 <div class="h-1 w-full bg-[#7A9B30]"></div>
                 <div class="p-8 text-center">
                     <div class="text-5xl mb-4">🌳</div>
@@ -67,7 +69,7 @@
             </div>
 
             <div
-                class="bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden">
+                class="wave-glow bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl overflow-hidden">
                 <div class="h-1 w-full bg-[#7A9B30]"></div>
                 <div class="p-8 text-center">
                     <div class="text-5xl mb-4">♻️</div>
@@ -91,7 +93,7 @@
 
             <div class="w-full text-center">
                 <h3 class="font-bold text-4xl text-[#F8DCC6] mb-4">¿Qué es el Compostaje?</h3>
-                <p class="text-lg text-white p-6 rounded-xl shadow-md leading-relaxed"
+                <p class="gradient-shift text-lg text-white p-6 rounded-xl shadow-md leading-relaxed"
                     style="background-color: #292929;">
                     Proceso biológico en el cual, con las condiciones adecuadas, los microorganismos descomponen
                     desechos orgánicos y posteriormente los transforman en abono natural para tus plantas.
@@ -108,23 +110,23 @@
             <div class="w-full text-center">
                 <h3 class="font-bold text-4xl text-[#F8DCC6] mb-6">Beneficios del Compostaje Orgánico</h3>
                 <ul class="list-none text-left max-w-2xl mx-auto space-y-5">
-                    <li
-                        class="flex items-start gap-3 bg-[#292929] p-5 rounded-xl shadow-inner hover:bg-[#353A13] transition">
+                    <li class="faq-card flex items-start gap-3 bg-[#292929] p-5 rounded-xl shadow-inner">
                         <span class="text-green-600 text-2xl">🌿</span>
-                        <p class="text-white"><strong>Mantiene el suelo saludable y nutre la planta:</strong> A diferencia de los abonos
+                        <p class="text-white"><strong>Mantiene el suelo saludable y nutre la planta:</strong> A
+                            diferencia de los abonos
                             químicos que solo nutren las plantas pero degradan el suelo, la composta orgánica hace
                             ambos.</p>
                     </li>
-                    <li
-                        class="flex items-start gap-3 bg-[#292929] p-5 rounded-xl shadow-inner hover:bg-[#353A13] transition">
+                    <li class="faq-card flex items-start gap-3 bg-[#292929] p-5 rounded-xl shadow-inner">
                         <span class="text-green-600 text-2xl">💰</span>
-                        <p class="text-white"><strong>Ahorro:</strong> Dejar de depender de fertilizantes químicos a largo plazo puede
+                        <p class="text-white"><strong>Ahorro:</strong> Dejar de depender de fertilizantes químicos a
+                            largo plazo puede
                             traer un ahorro significativo.</p>
                     </li>
-                    <li
-                        class="flex items-start gap-3 bg-[#292929] p-5 rounded-xl shadow-inner hover:bg-[#353A13] transition">
+                    <li class="faq-card flex items-start gap-3 bg-[#292929] p-5 rounded-xl shadow-inner">
                         <span class="text-green-600 text-2xl">♻️</span>
-                        <p class="text-white"><strong>Una nueva vida a tus desechos:</strong> Por fin puedes darles un nuevo uso a esas
+                        <p class="text-white"><strong>Una nueva vida a tus desechos:</strong> Por fin puedes darles un
+                            nuevo uso a esas
                             cáscaras de frutas o verduras que siempre botas.</p>
                     </li>
                 </ul>
@@ -148,7 +150,7 @@
 
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div
-                    class="bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden">
+                    class="border-flow bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden">
                     <div class="h-1 w-full bg-[#7A9B30] rounded-tl-2xl rounded-tr-2xl"></div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-[#F8DCC6] mb-3">El problema</h3>
@@ -163,18 +165,18 @@
                     </div>
                 </div>
                 <div
-                    class="bg-black border border-[#7A9B30] rounded-2xl shadow-lg p-6 hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden w-full max-w-sm mx-auto">
+                    class="gradient-shift bg-black border border-[#7A9B30] rounded-2xl shadow-lg p-6 hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden w-full max-w-sm mx-auto">
                     <canvas id="graficaResiduos"></canvas>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-10 items-center">
                 <div
-                    class="bg-black border border-[#7A9B30] rounded-2xl shadow-lg p-6 hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden w-full max-w-sm mx-auto order-last md:order-first">
+                    class="gradient-shift bg-black border border-[#7A9B30] rounded-2xl shadow-lg p-6 hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden w-full max-w-sm mx-auto order-last md:order-first">
                     <canvas id="graficaImpacto"></canvas>
                 </div>
                 <div
-                    class="bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden">
+                    class="border-flow bg-black border border-[#7A9B30] rounded-2xl shadow-lg hover:shadow-2xl hover:shadow-[#7A9B30] transition duration-300 overflow-hidden">
                     <div class="h-1 w-full bg-[#7A9B30] rounded-tl-2xl rounded-tr-2xl"></div>
                     <div class="p-6">
                         <h3 class="text-2xl font-bold text-[#F8DCC6] mb-3">Impacto ambiental</h3>
@@ -317,7 +319,7 @@
         <div class="max-w-6xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8 text-center">
 
             <div>
-                <h3 class="text-[#F8DCC6] font-bold text-xl mb-4">POT-C</h3>
+                <img src="Images/Logo Blanco.png" class="h-[70px] mx-auto mb-4" alt="">
                 <p class="text-white text-sm">
                     Proyecto de basurero inteligente que transforma desechos orgánicos en composta natural. Inspirando
                     hogares y colegios a cuidar el medio ambiente.

@@ -4,15 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POT-C</title>
+    <title>Proyecto</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="Images/Icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="Efectos.css">
+    <script src="Codigos.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
     <section class="relative text-white py-24 px-6 text-center bg-cover bg-center h-[700px] md:h-[550px]"
-        style="background-image: url('Probando2.jpg');">
+        style="background-image: url('Images/Background2.png');">
 
         <nav
             class="absolute top-4 left-1/2 transform -translate-x-1/2 flex justify-center gap-6 bg-black/30 backdrop-blur-[2px] py-1 px-6 rounded-b-2xl shadow-xl">
@@ -24,28 +26,31 @@
         </nav>
 
 
-        <h2 class="text-4xl mt-5 mb-10 font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]"><b>APRENDE MÁS SOBRE NUESTRO PROYECTO</b></h2>
+        <h2 class="text-4xl mt-5 mb-10 font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.9)]"><b>APRENDE MÁS
+                SOBRE NUESTRO PROYECTO</b></h2>
         <div class="bg-black/30 p-1 rounded-xl max-w-2xl mx-auto mb-10">
-            <p class="text-xl mb-10">
+            <p class="text-xl">
                 <b>¿No sabes que uso útil darle a tus desechos orgánicos?</b><br><br>
                 Nuestra solución: <b>Klani.</b><br><br>
                 Dedicada a la
-                creación automatizada de composta <b>100% natural</b> aprovechando las propiedades de los desechos para
+                creación automatizada de composta <b>100% natural</b> aprovechando las propiedades de los desechos
+                orgánicos para
                 un
                 resultado en hasta <b>15 días</b>.
             </p>
-
-            <a href="#como-funciona" class="px-8 py-3 rounded-full font-semibold text-[#353A13] bg-[#F8DCC6] shadow-md
-          hover:bg-[#353A13] hover:text-white hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.7)]">
-                ¿Cómo funciona?
-            </a>
         </div>
+        <a href="#como-funciona" class="px-8 py-3 rounded-full font-semibold text-[#353A13] bg-[#F8DCC6] shadow-md
+          hover:bg-[#353A13] hover:text-white hover:shadow-[0_0_15px_5px_rgba(255,255,255,0.7)]">
+            ¿Cómo funciona?
+        </a>
     </section>
 
 
     <section id="como-funciona" class="bg-[#292929] py-20 px-6">
-        <h2 class="text-4xl font-bold text-center mb-7 text-[#F8DCC6]">Convierte tu Basura en Vida</h2>
-        <p class="text-white text-lg text-center">Imagina un basurero que no solo guarda tus desechos… <b>¡sino que los
+        <h2 class="text-4xl font-bold text-center text-[#F8DCC6]">Convierte tu Basura en Vida</h2>
+        <div class="mx-auto w-20 h-1 bg-[#7A9B30] rounded-full mt-4 mb-7"></div>
+        <p class="text-white max-w-4xl text-center mx-auto mt-6 mb-10 text-lg leading-relaxed">Imagina un basurero que
+            no solo guarda tus desechos… <b>¡sino que los
                 transforma en un abono natural de primera
                 calidad!</b> <br><br>
             Nuestro basurero inteligente combina <u>sensores de oxígeno, ph, gases y temperatura</u>, además de sistemas
@@ -163,7 +168,7 @@
             </button>
 
             <div id="modelContainer"
-                class="bg-[#292929] w-[80%] h-[500px] border rounded-2xl shadow-xl overflow-hidden hidden hover:shadow-[#7A9B30] hover:border-[#7A9B30]">
+                class="bg-[#292929] w-[80%] h-[500px] border rounded-2xl shadow-xl overflow-hidden hidden">
                 <model-viewer id="modelViewer" src="Basurero.glb" alt="Modelo 3D de mi proyecto" auto-rotate
                     camera-controls shadow-intensity="1" orientation="0deg 0deg -90deg" class="w-full h-full">
                 </model-viewer>
@@ -187,48 +192,49 @@
     </section>
 
     <section class="bg-gradient-to-b from-black via-black to-[#272B0E] px-4 sm:px-0">
+        <div class="flex items-center w-full justify-center gap-3">
+            <div class="flex-grow h-[2px] bg-white"></div>
+            <img src="Images/Icono.png" class="w-6 h-6 inline-block" alt="">
+            <div class="flex-grow h-[2px] bg-white"></div>
+        </div>
         <h2 class="font-bold text-3xl sm:text-4xl text-[#F8DCC6] mb-6 text-center pt-9">Fases del Compostaje</h2>
-        <p class="text-white text-lg text-center px-6">El basurero Klani cuenta con un proceso automatizado de 5 etapas,
+        <p class="text-white max-w-4xl text-center mx-auto mt-6 mb-10 text-lg leading-relaxed">El basurero Klani cuenta
+            con un proceso automatizado de 5 etapas,
             en el que cada una se encarga de realizar una acción diferente de manera simultanea con el objetivo de
             lograr el resultado
             de conseguir composta orgánica en aproximadamente 15 días.</p>
         <div class="w-full text-center mt-10 pb-10">
             <ul class="list-none text-left max-w-2xl mx-auto space-y-4 sm:space-y-5">
 
-                <li
-                    class="flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner hover:shadow-[0_0_15px_5px_rgba(122,155,48,0.7)] transition">
+                <li class="faq-card flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner">
                     <span class="text-green-600 text-xl sm:text-2xl">🗑️</span>
                     <p class="text-white text-sm sm:text-base"><strong>Basurero (Cáscaras):</strong> El inicio del
                         proceso: tus desechos orgánicos, como cáscaras y restos de cocina, son triturados
                         automáticamente por el basurero.</p>
                 </li>
 
-                <li
-                    class="flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner hover:shadow-[0_0_15px_5px_rgba(122,155,48,0.7)] transition">
+                <li class="faq-card flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner">
                     <span class="text-green-600 text-xl sm:text-2xl">🔥</span>
                     <p class="text-white text-sm sm:text-base"><strong>Fase Mezofílica:</strong> Durante los primeros
                         días, los microorganismos comienzan a descomponer los materiales a temperatura moderada,
                         acelerando el inicio del compostaje.</p>
                 </li>
 
-                <li
-                    class="flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner hover:shadow-[0_0_15px_5px_rgba(122,155,48,0.7)] transition">
+                <li class="faq-card flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner">
                     <span class="text-green-600 text-xl sm:text-2xl">🌡️</span>
                     <p class="text-white text-sm sm:text-base"><strong>Fase Termofílica:</strong> La temperatura sube
                         naturalmente, eliminando bacterias no deseadas y descomponiendo los residuos más resistentes,
                         asegurando un abono limpio y seguro.</p>
                 </li>
 
-                <li
-                    class="flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner hover:shadow-[0_0_15px_5px_rgba(122,155,48,0.7)] transition">
+                <li class="faq-card flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner">
                     <span class="text-green-600 text-xl sm:text-2xl">⏳</span>
                     <p class="text-white text-sm sm:text-base"><strong>Reposo de Composta:</strong> Tras el calor
                         intenso, el compost descansa y madura, estabilizando sus nutrientes y adquiriendo la textura y
                         consistencia ideales.</p>
                 </li>
 
-                <li
-                    class="flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner hover:shadow-[0_0_15px_5px_rgba(122,155,48,0.7)] transition">
+                <li class="faq-card flex items-start gap-2 sm:gap-3 bg-[#292929] p-3 sm:p-5 rounded-xl shadow-inner">
                     <span class="text-green-600 text-xl sm:text-2xl">🌱</span>
                     <p class="text-white text-sm sm:text-base"><strong>Producto de Composta:</strong> Finalmente,
                         obtienes un abono natural, rico y listo para nutrir tus plantas. Lo que antes era desperdicio se
@@ -241,12 +247,13 @@
 
 
     <section class="bg-[#292929]">
-        <h2 class="font-bold text-4xl sm:text-4xl text-[#F8DCC6] mb-6 text-center pt-9">Beneficios del Basurero</h2>
+        <h2 class="font-bold text-4xl sm:text-4xl text-[#F8DCC6] text-center pt-9">Beneficios del Basurero</h2>
+        <div class="mx-auto w-20 h-1 bg-[#7A9B30] rounded-full mb-7 mt-4"></div>
         <div class="max-w-3xl mx-auto grid gap-6 sm:grid-cols-3 pb-10">
 
             <div class="bg-[#292929] p-5 rounded-xl flex flex-col items-center text-center">
                 <div
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-[#353A13] shadow-[0_0_15px_5px_rgba(255,255,255,0.7)] text-white font-bold text-lg mb-4">
+                    class="glow-white w-12 h-12 flex items-center justify-center rounded-full bg-[#353A13] text-white font-bold text-lg mb-4">
                     1</div>
                 <h3 class="text-white font-semibold mb-2">Rápido y automatizado</h3>
                 <p class="text-white text-sm sm:text-base">El basurero acelera la descomposición de los desechos
@@ -256,7 +263,7 @@
 
             <div class="bg-[#292929] p-5 rounded-xl flex flex-col items-center text-center">
                 <div
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-[#353A13] shadow-[0_0_15px_5px_rgba(255,255,255,0.7)] text-white font-bold text-lg mb-4">
+                    class="glow-white w-12 h-12 flex items-center justify-center rounded-full bg-[#353A13] text-white font-bold text-lg mb-4">
                     2</div>
                 <h3 class="text-white font-semibold mb-2">Fácil de usar</h3>
                 <p class="text-white text-sm sm:text-base">Su sistema intuitivo permite que cualquier miembro de la
@@ -266,7 +273,7 @@
 
             <div class="bg-[#292929] p-5 rounded-xl flex flex-col items-center text-center">
                 <div
-                    class="w-12 h-12 flex items-center justify-center rounded-full bg-[#353A13] shadow-[0_0_15px_5px_rgba(255,255,255,0.7)] text-white font-bold text-lg mb-4">
+                    class="glow-white w-12 h-12 flex items-center justify-center rounded-full bg-[#353A13] text-white font-bold text-lg mb-4">
                     3</div>
                 <h3 class="text-white font-semibold mb-2">Se adapta a espacios pequeños</h3>
                 <p class="text-white text-sm sm:text-base">Su tamaño reducido permite colocarlo fácilmente en cualquier
@@ -291,7 +298,7 @@
         <div class="max-w-6xl mx-auto py-12 px-6 grid md:grid-cols-2 gap-8 text-center">
 
             <div>
-                <h3 class="text-[#F8DCC6] font-bold text-xl mb-4">POT-C</h3>
+                <img src="Images/Logo Blanco.png" class="h-[70px] mx-auto mb-4" alt="">
                 <p class="text-white text-sm">
                     Proyecto de basurero inteligente que transforma desechos orgánicos en composta natural. Inspirando
                     hogares y colegios a cuidar el medio ambiente.
